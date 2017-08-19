@@ -4,8 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router';
 import routes from './router'
-
 Vue.use(VueRouter);
+
+// 引入video
+import VideoPlayer from 'vue-video-player'
+Vue.use(VideoPlayer);
+require('video.js/dist/video-js.css')
+require('vue-video-player/src/custom-theme.css')
+
 // 按需引入ELE
 import {
   Table,

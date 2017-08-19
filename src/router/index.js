@@ -3,15 +3,23 @@ export default [
   {
     name: 'Index',
     path: '/',
-    redirect: {name: 'Hello'}
+    redirect: {name: 'index'}
   },
   {
     meta: {
-      name: 'VUE',
+      name: 'index page',
     },
-    name: 'Hello',
+    name: 'index',
     path: '/',
-    component: resolve => require(['../views/Hello.vue'], resolve)
+    component: resolve => require(['../views/index.vue'], resolve)
+  },
+  {
+    meta: {
+      name: 'video page',
+    },
+    name: 'video',
+    path: '/video',
+    component: resolve => require(['../views/video/video.vue'], resolve)
   },
   {
     path: '*',
