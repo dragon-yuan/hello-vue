@@ -18,7 +18,10 @@ npm run build
 npm run build --report
 
 
-#build some depends 
+#build some depends
 npm install --save-dev babel-cli
 npm install --save-dev babel-preset-es2015
 ```
+
+#build vue components
+npm install vue-video-player --save
