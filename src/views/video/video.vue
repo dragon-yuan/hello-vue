@@ -27,7 +27,7 @@
         playerOptions: {
           sources: [{
             type: "rtmp/mp4",
-            src: "rtmp://live.hkstv.hk.lxdns.com/live/hks"
+            src: "rtmp://live.dragon-yuan.me/live_dragon/dragon?auth_key=1503137609-0-0-0fc8722d4e7af915b0524dd6f277b0bd"
           }],
           techOrder: ['flash'],
           autoplay: false,

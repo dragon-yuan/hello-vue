@@ -18,6 +18,14 @@ module.exports = merge(baseWebpackConfig, {
   // cheap-module-eval-source-map is faster for development
   devtool: '#cheap-module-eval-source-map',
   plugins: [
+    // 关闭log
+    new webpack.optimize.UglifyJsPlugin({
+      compress:{
+        warnings: false,
+        drop_debugger: true,
+        drop_console: true
+      }
+    }),
     new webpack.DefinePlugin({
       'process.env': config.dev.env
     }),
